@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 
+const analyzeRouter = require('./routes/analyze');
+app.use('/analyze', analyzeRouter);
+
 app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
