@@ -1,0 +1,17 @@
+# Node
+node_modules/
+
+# Runtime uploads
+uploads/
+server/uploads/
+
+# Test files
+*.csv
+*.txt
+
+# SSH / accidental files
+eval "$(ssh-agent -s)"
+eval "$(ssh-agent -s)".pub
+
+# OS
+.DS_Store
